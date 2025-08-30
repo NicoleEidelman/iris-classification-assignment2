@@ -1,2 +1,50 @@
+# --- Python compiled files ---
 __pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments ---
 .venv/
+venv/
+env/
+
+# --- Jupyter Notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- Logs and system files ---
+*.log
+.DS_Store
+Thumbs.db
+
+# --- IDE / Editor files ---
+.vscode/
+.idea/
+*.swp
+
+# --- Build / packaging ---
+build/
+dist/
+*.egg-info/
+
+# --- Data files (large, raw data not for repo) ---
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.h5
+*.pkl
+*.joblib
+
+# --- Images / outputs you do NOT want ---
+*.png
+*.jpg
+*.jpeg
+
+# --- Keep only specific figures ---
+# If you want to keep assignment plots, "unignore" them:
+!knn_k_curve.png
+!decision_tree.png
+!confusion_matrix_KNN_k=5.png
+!rf_gridsearch_heatmap.png
+!rf_feature_importances.png
+!rf_confusion_matrix.png
