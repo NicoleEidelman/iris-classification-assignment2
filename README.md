@@ -12,7 +12,7 @@ The task focuses on applying different classification models on the **Iris datas
   - Part 2: Model Implementation (Dummy, KNN, Decision Tree, Random Forest)
   - Part 3: Evaluation & Interpretation (classification reports, confusion matrix)
   - Part 4: Bonus (GridSearchCV for Random Forest + feature importances)
-- `REPORT.txt` – Summary of results and classification reports for all models (English only).
+- `REPORT.txt` – Summary of results and classification reports for all models .
 - **Figures**:
   - `knn_k_curve.png` – Accuracy vs. k for KNN
   - `decision_tree.png` – Visualization of the Decision Tree
@@ -63,14 +63,11 @@ To run the code, install the dependencies:
 pip install -r requirements.txt
 How to Run
 Clone the repository:
-
-bash
-Copy code
 git clone https://github.com/<your-username>/iris-classification-assignment2.git
 cd iris-classification-assignment2
-Run the script:
 
-bash
-Copy code
+Run the script:
 python assignment2_classification.py
+
+
 Outputs will be saved as .png figures and REPORT.txt in the working directory.
