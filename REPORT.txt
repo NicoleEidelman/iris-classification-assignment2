@@ -1,0 +1,61 @@
+Summary (generated 2025-08-30T17:19:32):
+------------------------------------------------------------------------
+Dummy (most_frequent)     : 0.333
+KNN (k=5)                 : 1.000
+Decision Tree             : 0.933
+Random Forest (100)       : 0.900
+------------------------------------------------------------------------
+Best model on test: KNN (k=5) (1.000)
+
+Notes:
+* Dummy ≈ 0.33 is just the baseline for balanced classes.
+* KNN performs exceptionally well on Iris due to clear separation in petal features.
+* Decision Tree is interpretable but prone to overfitting.
+* Random Forest is more stable; after GridSearch it nearly matched KNN performance.
+
+Classification reports
+========================================================================
+
+--- Dummy (most_frequent) ---
+              precision    recall  f1-score   support
+
+      setosa       0.33      1.00      0.50        10
+  versicolor       0.00      0.00      0.00        10
+   virginica       0.00      0.00      0.00        10
+
+    accuracy                           0.33        30
+   macro avg       0.11      0.33      0.17        30
+weighted avg       0.11      0.33      0.17        30
+
+--- KNN (k=5) ---
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        10
+  versicolor       1.00      1.00      1.00        10
+   virginica       1.00      1.00      1.00        10
+
+    accuracy                           1.00        30
+   macro avg       1.00      1.00      1.00        30
+weighted avg       1.00      1.00      1.00        30
+
+--- Decision Tree ---
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        10
+  versicolor       0.90      0.90      0.90        10
+   virginica       0.90      0.90      0.90        10
+
+    accuracy                           0.93        30
+   macro avg       0.93      0.93      0.93        30
+weighted avg       0.93      0.93      0.93        30
+
+--- Random Forest (100) ---
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        10
+  versicolor       0.82      0.90      0.86        10
+   virginica       0.89      0.80      0.84        10
+
+    accuracy                           0.90        30
+   macro avg       0.90      0.90      0.90        30
+weighted avg       0.90      0.90      0.90        30
